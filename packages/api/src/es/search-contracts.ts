@@ -42,8 +42,6 @@ export async function searchContracts({
     throw new Error("Baza de date nu este specificata.");
   }
 
-  console.log("escaped", escapeQuery(query));
-
   const querySearch = {
     bool: {
       must: [
