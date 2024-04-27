@@ -12,6 +12,7 @@ export const env = createEnv({
     NEXT_PUBLIC_PLAUSIBLE_URL: z.string().min(1),
     NEXT_PUBLIC_CLOUDFLARE_TOKEN: z.string().min(1),
     NEXT_PUBLIC_CLOUDFLARE_HOST: z.string().min(1),
+    NEXT_PUBLIC_OPENSTATUS_RUM_DSN: z.string().min(1),
   },
   runtimeEnv: {
     NEXT_PUBLIC_FORMBRICKS_API_HOST: process.env.NEXT_PUBLIC_FORMBRICKS_API_HOST,
@@ -23,5 +24,6 @@ export const env = createEnv({
     NEXT_PUBLIC_PLAUSIBLE_URL: process.env.NEXT_PUBLIC_PLAUSIBLE_URL,
     NEXT_PUBLIC_CLOUDFLARE_TOKEN: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN,
     NEXT_PUBLIC_CLOUDFLARE_HOST: process.env.NEXT_PUBLIC_CLOUDFLARE_HOST,
+    NEXT_PUBLIC_OPENSTATUS_RUM_DSN: process.env.NEXT_PUBLIC_OPENSTATUS_RUM_DSN,
   },
 });

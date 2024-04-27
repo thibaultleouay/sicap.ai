@@ -2,6 +2,7 @@ import type { Viewport } from "next";
 import { SessionProvider } from "next-auth/react";
 import { GeistSans, GeistMono } from "geist/font";
 import { AxiomWebVitals } from "next-axiom";
+import { OpenStatusProvider } from "@openstatus/next-monitoring";
 
 import "@sicap/ui/src/styles/styles.css";
 import "@/app/globals.css";
@@ -87,6 +88,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
             <FormbricksProvider />
           </ThemeProvider>
         </SessionProvider>
+        <OpenStatusProvider dsn={env.NEXT_PUBLIC_OPENSTATUS_RUM_DSN} />
       </body>
       <AxiomWebVitals />
     </html>
