@@ -39,3 +39,4 @@ yarn-error.log*
 dist/
 .vercel
 devdb*
+tsconfig.tsbuildinfo

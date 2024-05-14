@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsup",
     "lint": "biome lint ./src",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "dev": "tsup --watch",
     "check-types": "tsc --noEmit",
     "fmt": "biome format --write ./src",

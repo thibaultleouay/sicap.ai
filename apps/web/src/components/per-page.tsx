@@ -16,7 +16,7 @@ export function PerPage({ total, pathname = "cauta" }: PerPageProps) {
 
   const handleValueChange = (value: string) => {
     setValue(value);
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(searchParams.toString());
     params.set("perPage", value);
     router.push(`${pathname}?${params.toString()}`);
   };
